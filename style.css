@@ -1,3 +1,8 @@
+
+/* observacoes: o container (div do form) não ficou perfeitamente alinhado ao centro da página
+a página fica igual ao prototipo do figma quando está a aprox. 50% no navegador
+Não consegui fazer o hr ficar na largura/alinhado ao inicio e final dos campos do relatório 
+A altura da div do form também não ficou conforme as especificações do figma*/
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +10,18 @@
 
 body {
     font-family: 'Archivo', sans-serif;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    padding: 0;
 
 }
-hr{
+
+hr {
     border: none;
-    border-top:  2px solid#E6E6F0;
+    border-top: 2px solid#E6E6F0;
     margin: 1px 0;
-    
+    padding: 0 36px;
+
 
 }
 
@@ -28,13 +38,14 @@ hr{
 }
 
 .centralizar {
-    
-    
+
+    /* max-width: 1440px; */
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
     height: .1vh;
+
 }
 
 .titulo {
@@ -71,6 +82,7 @@ hr{
     font-size: 24px;
     line-height: 34px;
     padding-bottom: 1em;
+    padding: 30px;
 }
 
 .form-container {
@@ -80,33 +92,53 @@ hr{
     height: 1098px;
     top: 282px;
     left: 351px;
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box;
     background-color: #f9f9f9;
     font-family: sans-serif;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
-/* .container-botao{
+
+.container-botao {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #D6D6D6;
+    align-items: center;
+    background-color: #F0F0F4;
+   font-family: 'Archivo', sans-serif;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
     width: 100%;
+    margin: 0;
+  
     
-} */
-
+}
+.container-botao button {
+  width: 100%;
+  padding: 15px;
+  background-color: #DB1B1B;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#historia{
+    margin-bottom: 25px;
+}
 
 
 form {
 
-    max-width: 400px;
-    margin: 20px auto;
+    max-width: 608px;
+    max-height: 834px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
@@ -133,7 +165,7 @@ textarea {
 }
 
 button {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: #DB1B1B;
     color: white;
     border: none;
